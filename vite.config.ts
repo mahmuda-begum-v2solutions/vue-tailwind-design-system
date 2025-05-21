@@ -5,8 +5,10 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
+const isGH = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
+  base: isGH ? '/vue-tailwind-design-system/' : '/',
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
