@@ -1,0 +1,1 @@
+import{s as a}from"./useTheme-DiMTzzGZ.js";import"./vue.esm-bundler-CkGt5U3E.js";const s=e=>{a(e)},c={parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i},theme:{options:["light","dark"],defaultValue:"light"}}},decorators:[(e,r)=>{var t;const o=((t=r.args)==null?void 0:t.theme)??"light";return s(o),e()}]};export{c as default};

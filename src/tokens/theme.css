@@ -1,0 +1,141 @@
+/* https://www.figma.com/design/nE7oD57X6I9Bf2gMCy2erP/Tailwind-CSS-UI-Design-System--Free---Community-?node-id=4-1180&t=AgwBd5L818I2tgxs-0 */
+/* https://colorhunt.co/palettes/black */
+/* https://www.color-hex.com/color/3e7b27 */
+
+/* Base setup */
+:root {
+  /* Default theme: light */
+  --color-mode: light;
+
+  /* Primary */
+  --primary-900: #213448;
+  --primary-800: #2f4961;
+  --primary-700: #3d5d7a;
+  --primary-600: #4c7293;
+  --primary-500: #5b87ac;
+  --primary-400: #7ca0bd;
+  --primary-300: #9cb9ce;
+  --primary-200: #bed2df;
+  --primary-100: #dde6ee;
+  --primary-50: #f5f9fb;
+
+  /* Secondary */
+  --secondary-900: #37264c;
+  --secondary-800: #4a366a;
+  --secondary-700: #62488a;
+  --secondary-600: #7b5da8;
+  --secondary-500: #9475c3;
+  --secondary-400: #ac94d2;
+  --secondary-300: #c4b4e0;
+  --secondary-200: #dcd3ee;
+  --secondary-100: #f0ebf8;
+  --secondary-50: #f9f7fc;
+
+  /* Tertiary */
+  --tertiary-900: #005f5f;
+  --tertiary-800: #1c7777;
+  --tertiary-700: #2e8c8c;
+  --tertiary-600: #3ea0a0;
+  --tertiary-500: #4eb5b5;
+  --tertiary-400: #76c6c6;
+  --tertiary-300: #9ed7d7;
+  --tertiary-200: #c3e8e8;
+  --tertiary-100: #e2f5f5;
+  --tertiary-50: #f5fcfc;
+
+  /* Danger */
+  --danger-900: #b82132;
+  --danger-800: #c23b47;
+  --danger-700: #cd545b;
+  --danger-600: #d76e70;
+  --danger-500: #e18785;
+  --danger-400: #eba0a0;
+  --danger-300: #f3baba;
+  --danger-200: #f8d2d2;
+  --danger-100: #fce8e8;
+  --danger-50: #fef5f5;
+
+  /* Warning */
+  --warning-900: #7a5200;
+  --warning-800: #996700;
+  --warning-700: #b77c00;
+  --warning-600: #d59200;
+  --warning-500: #f3a700;
+  --warning-400: #f7bd3a;
+  --warning-300: #facc6d;
+  --warning-200: #fbdc9f;
+  --warning-100: #fcecca;
+  --warning-50: #fff9eb;
+
+  /* Success */
+  --success-900: #14532d; /* Deep forest */
+  --success-800: #166534;
+  --success-700: #15803d;
+  --success-600: #16a34a; /* Tailwind emerald-600 */
+  --success-500: #22c55e; /* Emerald green */
+  --success-400: #4ade80;
+  --success-300: #86efac;
+  --success-200: #bbf7d0;
+  --success-100: #dcfce7;
+  --success-50: #f0fdf4; /* Very subtle green */
+
+  /* Neutral */
+  --neutral-900: #1a1a1d;
+  --neutral-800: #292a2e;
+  --neutral-700: #383a3d;
+  --neutral-600: #474a4d;
+  --neutral-500: #565a5d;
+  --neutral-400: #6b7074;
+  --neutral-300: #8a8e92;
+  --neutral-200: #a8abaf;
+  --neutral-100: #c5c8cc;
+  --neutral-50: #e2e4e6;
+}
+
+/* Dark mode override */
+[data-theme='dark'] {
+  --color-mode: dark;
+
+  /* Reverse/adjust as needed for contrast */
+  --primary-800: #4c7293;
+  --primary-700: #5b87ac;
+  --primary-500: #7ca0bd;
+  --primary-400: #bed2df;
+  --primary-300: #dde6ee;
+
+  --secondary-800: #7b5da8;
+  --secondary-700: #9475c3;
+  --secondary-500: #c4b4e0;
+  --secondary-400: #dcd3ee;
+  --secondary-300: #f0ebf8;
+
+  --tertiary-800: #3ea0a0;
+  --tertiary-700: #4eb5b5;
+  --tertiary-500: #9ed7d7;
+  --tertiary-400: #c3e8e8;
+  --tertiary-300: #e2f5f5;
+
+  --danger-800: #d76e70;
+  --danger-700: #e18785;
+  --danger-500: #f3baba;
+  --danger-400: #f8d2d2;
+  --danger-300: #fce8e8;
+
+  --warning-800: #d59200;
+  --warning-700: #f3a700;
+  --warning-500: #facc6d;
+  --warning-400: #fbdc9f;
+  --warning-300: #fcecca;
+
+  --success-800: #16a34a;
+  --success-700: #22c55e;
+  --success-500: #86efac;
+  --success-400: #86efac;
+  --success-300: #dcfce7;
+
+  --neutral-800: #474a4d;
+  --neutral-700: #565a5d;
+  --neutral-500: #8a8e92;
+  --neutral-400: #a8abaf;
+  --neutral-300: #c5c8cc;
+}
