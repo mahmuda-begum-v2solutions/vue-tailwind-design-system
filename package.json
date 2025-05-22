@@ -1,7 +1,38 @@
 {
   "name": "vue-tailwind-design-system",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A reusable Vue 3 + Tailwind CSS UI design system with Storybook and component library support.",
+  "author": "Mahmuda Begum",
+  "license": "MIT",
   "homepage": "https://mahmuda-begum-v2solutions.github.io/vue-tailwind-design-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahmuda-begum-v2solutions/vue-tailwind-design-system.git"
+  },
+  "keywords": [
+    "vue",
+    "tailwindcss",
+    "design-system",
+    "storybook",
+    "ui-components",
+    "typescript",
+    "component-library",
+    "vue3"
+  ],
+  "main": "./dist/vue-tailwind-design-system.umd.cjs",
+  "module": "./dist/vue-tailwind-design-system.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-tailwind-design-system.es.js",
+      "require": "./dist/vue-tailwind-design-system.cjs.js"
+    }
+  },
   "private": false,
   "type": "module",
   "scripts": {
@@ -15,13 +46,15 @@
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "cross-env STORYBOOK_BUILD=true storybook build",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
-  "dependencies": {
-    "pinia": "^3.0.1",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+  "peerDependencies": {
+    "vue": "^3.5.0",
+    "pinia": "^3.0.0",
+    "vue-router": "^4.0.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
@@ -61,15 +94,5 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "keywords": [
-    "vue",
-    "tailwindcss",
-    "design-system",
-    "storybook",
-    "ui-components",
-    "typescript"
-  ],
-  "author": "Mahmuda Begum",
-  "license": "MIT"
+  }
 }
