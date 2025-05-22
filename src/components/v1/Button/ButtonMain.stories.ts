@@ -120,15 +120,16 @@ export const BackgroundColor: Story = {
     components: { ButtonMain },
     template: `
       <div class="flex flex-col gap-10 p-6">
-        <div>
-          <h3 class="mb-4 font-semibold text-lg">Background Color</h3>
-          <div class="flex flex-wrap gap-4">
-            <ButtonMain label="solid" backgroundColorType="solid" role="primary"/>
-            <ButtonMain label="transparent" backgroundColorType="transparent" role="primary" />
-            <ButtonMain label="subtle" backgroundColorType="subtle" role="primary" />
-            <ButtonMain label="subdued" backgroundColorType="subdued" role="primary" />
-          </div>
+      <div>
+        <h3 class="mb-4 font-semibold text-lg">Background Color</h3>
+        <div class="flex flex-wrap gap-4">
+          <ButtonMain label="solid" backgroundColorType="solid" role="primary" />
+          <ButtonMain label="transparent" backgroundColorType="transparent" role="primary" />
+          <ButtonMain label="subtle" backgroundColorType="subtle" role="primary" />
+          <ButtonMain label="subdued" backgroundColorType="subdued" role="primary" />
         </div>
+      </div>
+    </div>
     `,
   }),
 }
@@ -149,6 +150,7 @@ export const BackgroundColorType: Story = {
             <ButtonMain label="danger" backgroundColorType="solid" role="danger" />
             <ButtonMain label="neutral" backgroundColorType="solid" role="neutral" />
           </div>
+        </div>
         </div>
     `,
   }),
@@ -173,6 +175,7 @@ export const TextColor: Story = {
                 <ButtonMain label="black" backgroundColorType="transparent" role="primary" borderWidth="2" borderColorType="neutral" textColor="black"/>
           </div>
         </div>
+        </div>
     `,
   }),
 }
@@ -195,6 +198,7 @@ export const BorderColor: Story = {
             <ButtonMain label="neutral" backgroundColorType="transparent" role="primary" borderWidth="2" borderColorType="neutral"/>
           </div>
         </div>
+        </div>
     `,
   }),
 }
@@ -212,6 +216,7 @@ export const BorderWidth: Story = {
             <ButtonMain label="2" role="primary" backgroundColorType="transparent" borderColorType="primary" borderWidth="2"/>
              <ButtonMain label="None" role="primary" backgroundColorType="transparent" borderColorType="transparent" classes="shadow-md" borderWidth="None"/>
           </div>
+        </div>
         </div>
     `,
   }),
@@ -243,6 +248,7 @@ export const BorderRadius: Story = {
             <ButtonMain label="pill (variant)" role="primary" backgroundColorType="transparent" borderColorType="primary" borderWidth="2" buttonRadius="pill"/>
             <ButtonMain label="circle" role="primary" backgroundColorType="transparent" borderColorType="primary" borderWidth="2" buttonRadius="circle" classes="!p-3 w-12 h-12"/>
           </div>
+        </div>
         </div>
     `,
   }),

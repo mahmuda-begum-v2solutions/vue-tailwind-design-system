@@ -20,13 +20,13 @@ export const radiusClassMap: Record<ButtonRadius, string> = {
 }
 
 export const iconSizeMap: Record<IconSize, string> = {
-  xsmall: '3',
-  small: '4',
-  default: '5',
-  medium: '5',
-  large: '6',
-  extralarge: '7',
-  mega: '8',
+  xsmall: 'w-3 h-3',
+  small: 'w-4 h-4',
+  default: 'w-5 h-5',
+  medium: 'w-5 h-5',
+  large: 'w-6 h-6',
+  extralarge: 'w-7 h-7',
+  mega: 'w-8 h-8',
 }
 
 export const fontSizeMap = {
