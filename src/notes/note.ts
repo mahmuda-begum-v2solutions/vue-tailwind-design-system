@@ -38,7 +38,8 @@
 // git tag v1.0.1
 
 // # 6. Push code + tag to GitHub
-// git push origin main --follow-tags
+// git push origin main
+// git push origin v1.0.1    # Push the new tag
 
 // # 7. Deploy Storybook to GitHub Pages
 // npm run deploy-storybook
