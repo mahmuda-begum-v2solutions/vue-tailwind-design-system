@@ -10,7 +10,7 @@ const isGH = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
   base: isGH ? '/vue-tailwind-design-system/' : '/',
-  plugins: [vue(), vueDevTools(), tailwindcss()],
+  plugins: [vue(), !isGH && vueDevTools(), tailwindcss()].filter(Boolean),
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -18,6 +18,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+    cssCodeSplit: true,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'VueTailwindDesignSystem',

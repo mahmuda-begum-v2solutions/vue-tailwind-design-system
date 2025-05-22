@@ -1,6 +1,6 @@
 {
   "name": "vue-tailwind-design-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A reusable Vue 3 + Tailwind CSS UI design system with Storybook and component library support.",
   "author": "Mahmuda Begum",
   "license": "MIT",
@@ -19,29 +19,32 @@
     "component-library",
     "vue3"
   ],
-  "main": "./dist/vue-tailwind-design-system.umd.cjs",
-  "module": "./dist/vue-tailwind-design-system.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/vue-tailwind-design-system.cjs.js",
+  "module": "dist/vue-tailwind-design-system.es.js",
+  "types": "dist/types/index.d.ts",
+  "style": "dist/index.css",
   "files": [
     "dist",
     "src"
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/vue-tailwind-design-system.es.js",
       "require": "./dist/vue-tailwind-design-system.cjs.js"
-    }
+    },
+    "./style.css": "./dist/index.css",
+    "./types": "./dist/types/index.d.ts"
   },
   "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-s type-check build-only build-types",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
+    "build-types": "vue-tsc --project tsconfig.build.json",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
     "storybook": "storybook dev -p 6006",
@@ -54,15 +57,14 @@
     "pinia": "^3.0.0",
     "vue-router": "^4.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.6.12",
-    "@storybook/addon-interactions": "^8.6.12",
-    "@storybook/addon-onboarding": "^8.6.12",
-    "@storybook/blocks": "^8.6.12",
-    "@storybook/test": "^8.6.12",
-    "@storybook/vue3": "^8.6.12",
-    "@storybook/vue3-vite": "^8.6.12",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@storybook/vue3": "^8.6.14",
+    "@storybook/vue3-vite": "^8.6.14",
     "@tailwindcss/vite": "^4.1.4",
     "@tsconfig/node22": "^22.0.1",
     "@types/jsdom": "^21.1.7",
@@ -82,7 +84,7 @@
     "jsdom": "^26.0.0",
     "npm-run-all2": "^7.0.2",
     "prettier": "3.5.3",
-    "storybook": "^8.6.12",
+    "storybook": "^8.6.14",
     "tailwindcss": "^4.1.4",
     "typescript": "~5.8.0",
     "vite": "^6.2.4",

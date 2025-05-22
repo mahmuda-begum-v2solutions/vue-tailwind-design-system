@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules",
+    "dist"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist/types",
+    "noEmit": false,
+    "composite": false,
+    "skipLibCheck": true,
+    "types": [
+      "vite/client"
+    ] // ✅ Add this line
+  }
+}
