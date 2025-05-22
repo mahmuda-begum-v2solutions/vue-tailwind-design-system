@@ -1,6 +1,6 @@
 {
   "name": "vue-tailwind-design-system",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A reusable Vue 3 + Tailwind CSS UI design system with Storybook and component library support.",
   "author": "Mahmuda Begum",
   "license": "MIT",
@@ -32,8 +32,7 @@
       "import": "./dist/vue-tailwind-design-system.es.js",
       "require": "./dist/vue-tailwind-design-system.cjs.js"
     },
-    "./style.css": "./dist/index.css",
-    "./types": "./dist/types/index.d.ts"
+    "./style.css": "./dist/index.css"
   },
   "private": false,
   "type": "module",
