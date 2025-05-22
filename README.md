@@ -1,40 +1,60 @@
 ### vue-tailwind-design-system
 
-A Vue 3 + TypeScript design system built with Tailwind CSS, showcased and documented using Storybook.
+A Vue 3 UI design system built with Tailwind CSS and TypeScript.
+Provides reusable, accessible, and customizable UI components for your Vue 3 projects.
+[Live Demo & Docs](https://mahmuda-begum-v2solutions.github.io/vue-tailwind-design-system)
 
-## Features
+## Installation
 
-1. Vue 3 components written in TypeScript
-2. Styled with Tailwind CSS utilities
-3. Fully documented and demoed in Storybook
-4. Easy to integrate in other Vue projects
-5. Supports hot-reload during development
-6. Includes unit tests with Vitest
-7. ESLint and Prettier configured for consistent code style
-
-## Getting Started
-
-### Install dependencies
+### Install the package from npm:
 
 ```bash
-npm install
+npm install vue-tailwind-design-system
 ```
 
-### Run Storybook (development mode)
+#### or
 
 ```bash
-npm run storybook
+yarn add vue-tailwind-design-system
 ```
 
-This will start Storybook on http://localhost:6006 with hot-reload.
+## Usage
 
-### Build Storybook (production static site)
+### Import the components you need in your Vue 3 project:
 
 ```bash
-npm run build-storybook
+<script setup lang="ts">
+import { CButton } from 'vue-tailwind-design-system'
+</script>
+
+<template>
+  <CButton @click="handleClick">Click Me</CButton>
+</template>
+
+<script setup lang="ts">
+function handleClick() {
+  alert('Button clicked!')
+}
+</script>
 ```
 
-This outputs static files in the storybook-static folder, ready to be deployed.
+## Available Components
+
+| Component | Description                                    |
+| --------- | ---------------------------------------------- |
+| `CButton` | Main button component styled with Tailwind CSS |
+
+More components will be added soon.
+
+### ✅ Features
+
+- Vue 3 components written in TypeScript
+- Styled with Tailwind CSS utilities
+- Fully documented and demoed in Storybook
+- Easy to integrate in other Vue projects
+- Supports hot-reload during development
+- Includes unit tests with Vitest
+- ESLint and Prettier configured for consistent code style
 
 ## License
 
