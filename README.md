@@ -3,6 +3,7 @@
 A Vue 3 UI design system built with Tailwind CSS and TypeScript.
 Provides reusable, accessible, and customizable UI components for your Vue 3 projects.
 [Live Demo & Docs](https://mahmuda-begum-v2solutions.github.io/vue-tailwind-design-system)
+[Package Link](https://www.npmjs.com/package/vue-tailwind-design-system)
 
 ## Installation
 
