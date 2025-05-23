@@ -24,7 +24,8 @@
 
 
 <script lang="ts" setup>
-import { useButtonMain, type ButtonProps } from './useButtonMain'
+import { useButtonMain } from './useButtonMain'
+import type { ButtonProps } from '../../../types/buttonTypes.ts'
 
 // Props
 const props = defineProps<ButtonProps>()

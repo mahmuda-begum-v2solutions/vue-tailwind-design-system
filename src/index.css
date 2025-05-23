@@ -1,4 +1,4 @@
 @import 'tailwindcss';
 /* Import your custom theme and color shades */
-@import './tokens/theme.css';
-@import './tokens/colorRoles.css';
+@import '../src/assets/tokens/theme.css';
+@import '../src/assets/tokens/colorRoles.css';

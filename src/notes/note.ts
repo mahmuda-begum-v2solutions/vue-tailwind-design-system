@@ -24,6 +24,7 @@
 
 // # 1. Build the component library
 // npm run build
+// npm run postbuild
 
 // # 2. Build the Storybook static site
 // npm run build-storybook

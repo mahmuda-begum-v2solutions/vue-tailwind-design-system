@@ -2,17 +2,11 @@ import { computed, watchEffect } from 'vue'
 import type {
   ColorRole,
   BackgroundColorType,
-  BorderColorType,
   BorderWidth,
-  ButtonRadius,
-  IconSize,
   TextColor,
-  TypographySize,
-  FontWeight,
-  Leading,
-  Theme,
+  ButtonProps,
 } from '../../../types/buttonTypes'
-import getIconComponent, { type IconName } from '../../../utils/getIconComponent'
+import getIconComponent from '../../../utils/getIconComponent'
 import { useTheme } from '../../../utils/useTheme'
 import { useA11yProps } from '../../../utils/useA11yProps'
 import {
@@ -24,28 +18,6 @@ import {
   lineHeightMap,
   radiusClassMap,
 } from '@/utils/buttonTokens'
-
-export interface ButtonProps {
-  label?: string
-  disabled?: boolean
-  isLoading?: boolean
-  role?: ColorRole
-  backgroundColorType?: BackgroundColorType
-  borderColorType?: BorderColorType
-  borderWidth?: BorderWidth
-  buttonRadius?: ButtonRadius
-  textColor?: TextColor
-  classes?: string
-  iconSize?: IconSize
-  leadingIcon?: IconName
-  trailingIcon?: IconName
-  Icon?: IconName
-  styles?: string
-  theme?: Theme
-  typographySize?: TypographySize
-  fontWeight?: FontWeight
-  leading?: Leading
-}
 
 function parseStyles(styles?: string) {
   if (!styles) return undefined

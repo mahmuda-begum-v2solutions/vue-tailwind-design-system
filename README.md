@@ -25,18 +25,17 @@ yarn add vue-tailwind-design-system
 
 ```bash
 <script setup lang="ts">
-import { CButton } from 'vue-tailwind-design-system'
+import { CButton } from 'vue-tailwind-design-system';
 </script>
 
 <template>
-  <CButton @click="handleClick">Click Me</CButton>
+  <CButton
+    label="Click Me"
+    isLoading
+    :disabled="false"
+    @click="() => {}"
+  />
 </template>
-
-<script setup lang="ts">
-function handleClick() {
-  alert('Button clicked!')
-}
-</script>
 ```
 
 ## Available Components
