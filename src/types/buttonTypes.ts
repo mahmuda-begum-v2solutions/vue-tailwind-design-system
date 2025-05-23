@@ -1,4 +1,4 @@
-import type { IconName } from '@/utils/getIconComponent'
+import type { IconName } from '../utils/getIconComponent'
 
 // Define the type for the icon sizes (could be keys like 'xsmall', 'small', etc.)
 export type IconSize = 'xsmall' | 'small' | 'default' | 'medium' | 'large' | 'extralarge' | 'mega'

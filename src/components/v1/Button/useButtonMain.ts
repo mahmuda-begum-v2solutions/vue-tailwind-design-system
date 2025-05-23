@@ -17,7 +17,7 @@ import {
   iconSizeMap,
   lineHeightMap,
   radiusClassMap,
-} from '@/utils/buttonTokens'
+} from '../../../utils/buttonTokens'
 
 function parseStyles(styles?: string) {
   if (!styles) return undefined

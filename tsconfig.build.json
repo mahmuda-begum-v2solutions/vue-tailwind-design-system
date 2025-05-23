@@ -5,6 +5,7 @@
     "src/**/*.ts",
     "src/**/*.vue",
     "src/**/*.css",
+    "env.d.ts"
   ],
   "exclude": [
     "**/*.spec.ts",
@@ -18,8 +19,15 @@
     "noEmit": false,
     "composite": false,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
     "types": [
-      "vite/client"
+      "vite/client",
+      "vue"
     ] // ✅ Add this line
   }
 }
