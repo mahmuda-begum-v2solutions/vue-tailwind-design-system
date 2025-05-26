@@ -45,7 +45,7 @@ const emit = defineEmits<{
 
 function handleClick(event: MouseEvent) {
   if (!props.isLoading && !props.disabled) {
-    console.log('consoled yeeee') // Log 1 in console
+    // console.log('consoled yeeee') // Log 1 in console
     emit('click', event)
   }
 }

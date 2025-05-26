@@ -2,8 +2,12 @@
 
 A Vue 3 UI design system built with Tailwind CSS and TypeScript.
 Provides reusable, accessible, and customizable UI components for your Vue 3 projects.
-[Live Demo & Docs](https://mahmuda-begum-v2solutions.github.io/vue-tailwind-design-system)
-[Package Link](https://www.npmjs.com/package/vue-tailwind-design-system)
+
+[📘 Live Storybook Demo & Docs](https://mahmuda-begum-v2solutions.github.io/vue-tailwind-design-system)
+
+[📦 NPM Package](https://www.npmjs.com/package/vue-tailwind-design-system)
+
+[💻 Demo Project Using the Package](https://github.com/mahmuda-begum-v2solutions/vue-tailwind-design-system-demo-npm)
 
 ## Installation
 
@@ -23,20 +27,62 @@ yarn add vue-tailwind-design-system
 
 ### Import the components you need in your Vue 3 project:
 
-```bash
+###### 1. Import the styles in your main.ts:
+
+```ts
+// main.ts
+import 'vue-tailwind-design-system/style.css'
+```
+
+###### 2. Use components in any Vue 3 component file:
+
+```vue
+<!-- ExampleComponent.vue -->
 <script setup lang="ts">
-import { CButton } from 'vue-tailwind-design-system';
+import { CButton } from 'vue-tailwind-design-system'
+
+function handleClick() {
+  alert('Button clicked!')
+}
 </script>
 
 <template>
-  <CButton
-    label="Click Me"
-    isLoading
-    :disabled="false"
-    @click="() => {}"
-  />
+  <CButton label="Click Me" :isLoading="false" :disabled="false" @click="handleClick" />
 </template>
 ```
+
+###### 🧪 Storybook Playground
+
+The Storybook demo includes a Playground story for CButton that exposes all props for live interaction and testing:
+
+```ts
+// Example: Storybook Playground configuration for CButton
+export const Playground: Story = {
+  args: {
+    label: 'Button',
+    disabled: false,
+    isLoading: false,
+    role: 'primary',
+    backgroundColorType: 'solid',
+    borderColorType: 'primary',
+    borderWidth: '1',
+    buttonRadius: 'pill',
+    textColor: 'white',
+    classes: 'shadow-md p-3',
+    iconSize: 'default',
+    leadingIcon: 'None',
+    trailingIcon: 'Button',
+    Icon: 'None',
+    styles: '',
+    theme: 'light',
+    typographySize: 'lg',
+    fontWeight: 'bold',
+    leading: '6',
+  },
+}
+```
+
+You can use the Playground in Storybook to experiment with different button styles and behaviors.
 
 ## Available Components
 

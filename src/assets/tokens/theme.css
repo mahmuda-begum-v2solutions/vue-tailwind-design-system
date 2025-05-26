@@ -7,6 +7,9 @@
   /* Default theme: light */
   --color-mode: light;
 
+  --white: #ffffff;
+  --black: #000000;
+
   /* Primary */
   --primary-900: #213448;
   --primary-800: #2f4961;
@@ -95,6 +98,9 @@
 /* Dark mode override */
 [data-theme='dark'] {
   --color-mode: dark;
+
+  --white: #ffffff;
+  --black: #000000;
 
   /* Reverse/adjust as needed for contrast */
   --primary-800: #4c7293;

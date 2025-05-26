@@ -125,6 +125,12 @@
   }
 
   /* === TEXT COLORS === */
+  .text-white {
+    color: var(--white);
+  }
+  .text-black {
+    color: var(--black);
+  }
   .text-primary {
     color: var(--primary-700);
   }
